@@ -1,0 +1,209 @@
+.datatable-container {
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: auto;
+    margin-top:60px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Table */
+.datatable {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.datatable th, td{
+    text-align: center;
+    padding: 12px;
+    word-wrap: break-word;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+.datatable thead {
+    background-color: #ff9800;
+    color: white;
+    font-size: 18px;
+}
+.datatable th, .datatable td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px;
+}
+
+.datatable th {
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+td:nth-child(3) {
+    color: #000;
+    font-weight: 500;
+}
+
+.datatable tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+.datatable tbody td {
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.datatable th:hover {
+    background: #0056b3;
+}
+
+.datatable tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Hover effect */
+.datatable tbody tr:hover {
+    background: #f5f5f5;
+    transition: 0.3s;
+}
+
+/* No Data Message */
+.no-data {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination button:hover {
+    background: #e68900;
+}
+
+.pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1024px){
+    .details-container {
+        margin-left: 40px;
+        padding: 10px;
+    }
+    .datatable {
+        font-size: 14px;
+        max-width: 95%;
+        margin-left: 0;
+    }
+    .datatable th, td {
+        padding: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .datatable{
+        width: 90%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .datatable th, 
+    .datatable td{
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .datatable-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+    .datatable{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .datatable th, .datatable td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .pagination button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .datatable-container {
+        max-width: 100%;
+    }
+    .datatable {
+        width:95%;
+        max-width: 100%;
+        overflow-x: auto;
+        margin-left: -10px;
+    }
+
+    .datatable th, .datatable td {
+        font-size: 10px;
+        padding: 6px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .pagination button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}

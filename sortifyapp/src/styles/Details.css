@@ -1,0 +1,119 @@
+.details-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 200px;
+    /* width: calc(100% - 250px); */
+    height: 100vh;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: #fff;
+}
+
+.details-container {
+    display: flex;
+    padding-top: 10px;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.details-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px;
+    background: white;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+.details-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+    margin-top: 80px;
+    max-width: 1200px;
+    padding-top: 10px;
+    background-color: transparent;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table-container th,
+.table-container td {
+    text-align: center;
+    padding: 12px;
+    
+}
+
+@media (max-width: 1024px) {
+    .details-container {
+        margin-left: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .table-container{ 
+        width: 95%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .details-container {
+        margin-left: 70px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 768px) {
+    .details-content{
+        margin-left: 0px;
+        padding: 5px;
+    }
+    .details-page {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+    }
+    .details-title {
+        font-size: 24px;
+    }
+
+    .table-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .details-container{
+        margin-left: 0;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-container {
+        margin-left: 0px;
+        padding: 10px;
+    }
+}
